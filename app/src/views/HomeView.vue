@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1>New York City Leading Causes of Death</h1>
     <div class="">
       <Card />
     </div>

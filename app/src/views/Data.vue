@@ -12,7 +12,7 @@ import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const pokemon = ref('')
-async function getPokemon() {
+async function getData() {
   let res = await fetch('https://data.cityofnewyork.us/resource/jb7j-dtam.json${route.params.id}')
   let data = await res.json()
   pokemon.value = data

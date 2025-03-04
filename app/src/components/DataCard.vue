@@ -11,7 +11,7 @@ const props = defineProps({
   Race_Ethnicity: Object,
   Year: Number,
 })
-const dataPath = computer(() => {
+const dataPath = computed(() => {
   return '/pokemon/${props.id}'
 })
 </script>
