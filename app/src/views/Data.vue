@@ -13,7 +13,7 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 const pokemon = ref('')
 async function getData() {
-  let res = await fetch('https://data.cityofnewyork.us/resource/jb7j-dtam.json${route.params.id}')
+  let res = await fetch('https://data.cityofnewyork.us/resource/43nn-pn8j.json${route.params.id}')
   let data = await res.json()
   pokemon.value = data
 }
