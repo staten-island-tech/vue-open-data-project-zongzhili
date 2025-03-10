@@ -1,4 +1,21 @@
 <template>
+  <div class="card">
+    <h2>{{ data.leading_cause }}</h2>
+    <p>Year: {{ data.year }}</p>
+  </div>
+</template>
+
+<script setup>
+defineProps({
+  data: {
+    type: Object,
+  },
+})
+</script>
+
+<style scoped></style>
+
+<!-- <template>
   <router-link :to="dataPath" class="card">
     <h2>{{ data.year }}</h2>
     <h3>{{ id }}</h3>
@@ -16,4 +33,4 @@ const dataPath = computed(() => {
 })
 </script>
 
-<style scoped></style>
+<style scoped></style> -->
