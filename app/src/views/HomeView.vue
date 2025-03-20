@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <h1>New York City Leading Causes of Death</h1>
+    <Bar v-if="loaded" :data="chartData" />
     <div>
       <Card v-for="item in death" :key="item.leading_cause + item.year" :data="item" />
     </div>
-    <Bar v-if="loaded" :data="chartData" />
   </div>
 </template>
 
@@ -41,8 +41,7 @@ const chartData = ref({
 async function getData() {
   let res = await fetch('https://data.cityofnewyork.us/resource/jb7j-dtam.json')
   let data = await res.json()
-  // console.log(data)
-  // death.value = data
+  death.value = data
   const causes = {}
 
   data.forEach((item) => {
