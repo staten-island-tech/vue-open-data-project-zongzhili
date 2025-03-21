@@ -7,7 +7,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <header>
     <nav>
       <RouterLink to="/">Leading Causes</RouterLink>
-      <RouterLink to="/about">Death by Race</RouterLink>
+      <RouterLink to="/Data">Death by Race</RouterLink>
     </nav>
   </header>
 
