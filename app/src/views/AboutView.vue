@@ -1,7 +1,19 @@
 <template>
   <div class="about">
-    <h1>Death By Race</h1>
+    <BarChart />
   </div>
 </template>
 
-<style></style>
+<script>
+import BarChart from '../components/BarChart.vue'
+export default {
+  name: 'App',
+  components: { BarChart },
+  data() {
+    return {
+      data: [],
+    }
+  },
+}
+</script>
+<style scoped></style>

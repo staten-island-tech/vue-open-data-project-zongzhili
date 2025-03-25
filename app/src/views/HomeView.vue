@@ -2,14 +2,10 @@
   <div class="container">
     <h1>New York City Leading Causes of Death</h1>
     <Bar v-if="loaded" :data="chartData" />
-    <div>
-      <Card v-for="item in death" :key="item.leading_cause + item.year" :data="item" />
-    </div>
   </div>
 </template>
 
 <script setup>
-import Card from '@/components/DataCard.vue'
 import { ref, onMounted } from 'vue'
 import { Bar } from 'vue-chartjs'
 
