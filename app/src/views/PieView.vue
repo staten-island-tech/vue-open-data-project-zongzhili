@@ -1,19 +1,15 @@
 <template>
   <div class="about">
     <h1>New York City Death By Race</h1>
-    <BarChart />
+    <PieChart />
   </div>
 </template>
 
 <script>
-import BarChart from '../components/PieChart.vue'
+import PieChart from '../components/PieChart.vue'
 export default {
-  name: 'App',
-  components: { BarChart },
-  data() {
-    return {
-      data: [],
-    }
+  components: {
+    PieChart,
   },
 }
 </script>

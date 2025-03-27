@@ -22,16 +22,23 @@ onMounted(async () => {
     const res = await fetch('https://data.cityofnewyork.us/resource/jb7j-dtam.json')
     let data = await res.json()
 
-    const labels = []
-    const deathCounts = []
+    const raceDeaths = {}
 
     for (let i = 0; i < data.length; i++) {
       const item = data[i]
-      if (item.race_ethnicity && item.deaths) {
-        labels.push(item.race_ethnicity)
-        deathCounts.push(item.deaths)
+      const race = item.race_ethnicity
+      const deaths = Number(item.deaths)
+
+      if (race && !isNaN(deaths)) {
+        if (!raceDeaths[race]) {
+          raceDeaths[race] = 0
+        }
+        raceDeaths[race] += deaths
       }
     }
+
+    const labels = Object.keys(raceDeaths)
+    const deathCounts = Object.values(raceDeaths)
 
     chartData.value = {
       labels: labels,
@@ -66,3 +73,10 @@ onMounted(async () => {
   }
 })
 </script>
+<style>
+.chart-container {
+  width: 1000px;
+  height: 1000px;
+  margin: auto;
+}
+</style>

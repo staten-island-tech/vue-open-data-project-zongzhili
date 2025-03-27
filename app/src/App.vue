@@ -5,8 +5,9 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <nav>
-      <RouterLink to="/">Leading Causes</RouterLink>
+      <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/Data">Death by Race</RouterLink>
+      <RouterLink to="/BarView">Leading Causes</RouterLink>
     </nav>
   </header>
 

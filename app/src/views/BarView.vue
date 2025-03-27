@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <h1>Home</h1>
+  <div class="bar-container">
+    <h1>New York City Leading Causes of Death</h1>
     <BarChart />
   </div>
 </template>
