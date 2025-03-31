@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-    <h1>Home</h1>
-    <div>
+  <div>
+    <h1>Specific Causes</h1>
+    <div class="container">
       <Card v-for="item in death" :key="item.leading_cause + item.year" :data="item" />
     </div>
   </div>
