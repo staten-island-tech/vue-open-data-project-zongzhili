@@ -32,7 +32,7 @@ const dataPath = computed(() => {
   transition:
     transform 0.2s,
     box-shadow 0.2s;
-  max-width: 10%;
+  width: 12%;
   text-align: center;
 }
 
@@ -40,17 +40,5 @@ const dataPath = computed(() => {
   transform: translateY(-5px);
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   background: #f9f9f9;
-}
-
-.card h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.card p {
-  font-size: 14px;
-  color: #555;
-  margin: 4px;
 }
 </style>

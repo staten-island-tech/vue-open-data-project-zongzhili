@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BarView from '../views/BarView.vue'
+import DataPathView from '../views/DataPathView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,11 @@ const router = createRouter({
       path: '/bar',
       name: 'BarView',
       component: BarView,
+    },
+    {
+      path: '/data/:leading_cause',
+      name: 'DataPath',
+      component: DataPathView,
     },
   ],
 })
