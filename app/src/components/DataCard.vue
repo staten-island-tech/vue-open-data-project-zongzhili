@@ -15,7 +15,7 @@ const props = defineProps({
 })
 
 const dataPath = computed(() => {
-  return `/data/${encodeURIComponent(props.data.leading_cause)}`
+  return `/data/${props.data.leading_cause}`
 })
 </script>
 
