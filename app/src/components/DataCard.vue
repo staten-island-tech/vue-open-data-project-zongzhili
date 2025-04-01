@@ -32,7 +32,7 @@ const dataPath = computed(() => {
   transition:
     transform 0.2s,
     box-shadow 0.2s;
-  max-width: 15%;
+  max-width: 10%;
   text-align: center;
 }
 
