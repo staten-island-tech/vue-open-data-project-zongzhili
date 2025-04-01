@@ -1,6 +1,6 @@
 <template>
   <router-link :to="dataPath" class="card">
-    <h3>{{ data.leading_cause }}</h3>
+    <h2>{{ data.leading_cause }}</h2>
     <p>Year: {{ data.year }}</p>
   </router-link>
 </template>
