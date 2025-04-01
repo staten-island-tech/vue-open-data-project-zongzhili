@@ -41,4 +41,33 @@ const dataPath = computed(() => {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   background: #f9f9f9;
 }
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+    margin: 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
 </style>
